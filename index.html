@@ -1,52 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Gildene Gomes</title>
+    <title>Portfólio | Gildene Gomes</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #fff;
+            line-height: 1.6;
         }
 
         header {
-            background: #1e293b;
-            padding: 30px;
             text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
         }
 
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        h1 {
+        header h1 {
             color: #38bdf8;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #cbd5e1;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
         }
 
         .card {
             background: #1e293b;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
         }
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #1e293b;
-            margin-top: 20px;
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
         }
 
         a {
             color: #38bdf8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .botoes {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-right: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -54,41 +109,77 @@
 <body>
 
     <header>
-        <h1>👋 Olá, eu sou o Gildene Gomes</h1>
+        <h1>👋 Gildene Gomes</h1>
         <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-        <p>🚀 Buscando estágio em TI</p>
+        <p>🚀 Em busca do primeiro estágio em TI</p>
+
+        <div class="botoes">
+            <a class="btn" href="mailto:gildenygomes@gmail.com">📧 Contato</a>
+            <a class="btn" href="https://www.linkedin.com/in/gildenegomesfeitosa" target="_blank">LinkedIn</a>
+            <a class="btn" href="https://github.com/Gildene-droid" target="_blank">GitHub</a>
+        </div>
     </header>
 
-    <section>
+    <div class="container">
+
         <div class="card">
-            <h2>🔐 Sobre mim</h2>
-            <p>Estou estudando ADS e focado em desenvolvimento web e suporte técnico.</p>
-            <p>“Buscando estágio em TI com foco em suporte técnico, desenvolvimento web e SQL. Conhecimentos em Java, HTML/CSS e MySQL, com projetos publicados no GitHub.”</p
+            <h2>👨‍💻 Sobre Mim</h2>
+            <p>
+                Sou estudante de Análise e Desenvolvimento de Sistemas com interesse em
+                Desenvolvimento Web, Suporte Técnico e Banco de Dados.
+                Estou construindo projetos práticos para desenvolver minhas habilidades
+                e conquistar minha primeira oportunidade na área de TI.
+            </p>
         </div>
 
         <div class="card">
             <h2>🚀 Tecnologias</h2>
-            <p>HTML • Java • MySQL</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Java</li>
+                <li>MySQL</li>
+                <li>Git e GitHub</li>
+            </ul>
         </div>
 
         <div class="card">
             <h2>📁 Projetos</h2>
             <ul>
-                <li>Site de apresentação</li>
-                <li>Lista de tarefas</li>
-                <li>Página de login</li>
+                <li>🌐 Site de Apresentação Pessoal</li>
+                <li>✅ Lista de Tarefas</li>
+                <li>🔐 Página de Login</li>
             </ul>
         </div>
 
         <div class="card">
             <h2>📫 Contato</h2>
-            <p>Email: gildenygomes@gmail.com</p>
-            <p>LinkedIn: www.linkedin.com/in/gildenegomesfeitosa</p>
+            <p><strong>Email:</strong> gildenygomes@gmail.com</p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/gildenegomesfeitosa" target="_blank">
+                    linkedin.com/in/gildenegomesfeitosa
+                </a>
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Gildene-droid" target="_blank">
+                    github.com/Gildene-droid
+                </a>
+            </p>
         </div>
-    </section>
+
+    </div>
 
     <footer>
-        © 2026 - Gildene Gomes
+        © 2026 - Gildene Gomes | Portfólio Profissional
+    </footer>
+
+</body>
+
+</html>
     </footer>
 
 </body>
